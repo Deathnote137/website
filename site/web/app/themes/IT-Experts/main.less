@@ -1,393 +1,392 @@
-@import "bootstrap/bootstrap";
-@import "font-awesome/less/font-awesome";
+  @import "bootstrap/bootstrap";
+  @import "font-awesome/less/font-awesome";
 
-@fa-font-path: "font-awesome/fonts";
+  @fa-font-path: "font-awesome/fonts";
 
-.position-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-}
-
-.position-center-slider {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-}
-
-.position-center-vertical {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-}
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *:before,
-  *:after,
-  *:first-letter,
-  *:first-line {
-    background: transparent !important;
-    color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-    box-shadow: none !important;
-    text-shadow: none !important;
+  .position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
+  .position-center-slider {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
   }
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
+  .position-center-vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * What follows is the result of much research on cross-browser styling.
+   * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+   * Kroc Camen, and the H5BP dev community and team.
    */
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
+  /* ==========================================================================
+     Base styles: opinionated defaults
+     ========================================================================== */
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
 
   /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * These selection rule sets have to be separate.
+   * Customize the background color to match your design.
    */
 
-  thead {
-    display: table-header-group;
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
 
-  tr,
-  img {
-    page-break-inside: avoid;
+  /*
+   * A better looking default horizontal rule
+   */
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
   }
 
-  img {
-    max-width: 100% !important;
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
   }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  /*
+   * Remove default fieldset styles.
+   */
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
   }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+
+  textarea {
+    resize: vertical;
   }
-}
 
-/* ==========================================================================
-   Navbar CSS - START
-   ========================================================================== */
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
 
-.dropdown-menu {
-  top: 55px;
-  right: 0;
-  float: right;
-  left: inherit;
-  li {
-    margin: 0 !important;
-    &:hover {
-      background-color: @brand-primary !important;
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+
+  /*
+   * Hide visually and from screen readers
+   */
+
+  .hidden {
+    display: none !important;
+  }
+
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   */
+
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  /*
+   * Extends the .visuallyhidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+
+  .clearfix:before,
+  .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+
+  @media print,
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     http://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+
+  @media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster:
+                                        http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
     }
   }
-}
 
-ul.nav.navbar-nav li {
-  margin-right: 22px;
-}
+  /* ==========================================================================
+     Navbar CSS - START
+     ========================================================================== */
 
-ul.nav.navbar-nav {
-  float: right;
-  font-size: 22px;
-  padding: 40px 0;
-}
-
-.navbar {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  box-shadow: 0px 0px 20px 0px black;
-  .container {
-    max-width: 100%;
+  .dropdown-menu {
+    top: 55px;
+    right: 0;
+    float: right;
+    left: inherit;
+    li {
+      margin: 0 !important;
+      &:hover {
+        background-color: @brand-primary !important;
+      }
+    }
   }
-  a:hover {
-    background-color: transparent;
+
+  ul.nav.navbar-nav li {
+    margin-right: 22px;
   }
-  .kontakt {
+
+  ul.nav.navbar-nav {
+    float: right;
+    font-size: 22px;
+    padding: 40px 0;
+  }
+
+  .navbar {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px black;
+    .container {
+      max-width: 100%;
+    }
+    a:hover {
+      background-color: transparent;
+    }
+    .kontakt {
+      box-sizing: border-box;
+      border: 2px solid @brand-primary;
+      border-radius: 2em;
+    }
+
+    .kontakt:hover {
+      background-color: @brand-primary;
+      border-radius: 2em;
+      a {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .nav {
+    li {
+      li:hover, a:hover, a:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .kontakt.current-menu-item {
     box-sizing: border-box;
     border: 2px solid @brand-primary;
     border-radius: 2em;
-  }
-
-  .kontakt:hover {
     background-color: @brand-primary;
-    border-radius: 2em;
     a {
       color: #ffffff !important;
+      &:after {
+        display: none !important;
+      }
     }
   }
-}
 
-.nav {
-  li {
-    li:hover, a:hover, a:focus {
-      background-color: transparent;
+  .notk {
+    .fa-chevron-down {
+      font-size: 20px;
+    }
+    .dropdown-toggle {
+      background-color: transparent !important;
+    }
+    a:hover:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 50%;
+      position: relative;
+      margin: 0 auto;
+      top: 8px;
+      background-color: @brand-primary;
     }
   }
-}
 
-.kontakt.current-menu-item {
-  box-sizing: border-box;
-  border: 2px solid @brand-primary;
-  border-radius: 2em;
-  background-color: @brand-primary;
-  a {
-    color: #ffffff !important;
-    &:after {
-      display: none !important;
-    }
+  .navbar a {
+    color: #00346e !important;
   }
-}
 
-.notk {
-  .fa-chevron-down {
-    font-size: 20px;
-  }
-  .dropdown-toggle {
-    background-color: transparent !important;
-  }
-  a:hover:after {
+  .current-menu-item a:after {
     content: "";
     display: block;
     height: 3px;
@@ -397,332 +396,317 @@ ul.nav.navbar-nav {
     top: 8px;
     background-color: @brand-primary;
   }
-}
 
-.navbar a {
-  color: #00346e !important;
-}
-
-.current-menu-item a:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50%;
-  position: relative;
-  margin: 0 auto;
-  top: 8px;
-  background-color: @brand-primary;
-}
-
-@media screen and (max-width: 1352px) {
-  ul.nav.navbar-nav {
-    float: left;
+  @media screen and (max-width: 1352px) {
+    ul.nav.navbar-nav {
+      float: left;
+    }
   }
-}
 
-@media screen and (max-width: 1200px) {
-  .page_content {
-    margin-top: 90px !important;
-  }
-  ul.nav.navbar-nav {
-    float: none;
-  }
-  .navbar {
-    a:hover {
-      background-color: transparent;
+  @media screen and (max-width: 1200px) {
+    .page_content {
+      margin-top: 90px !important;
     }
-    .container {
-      margin: 5px;
-      width: 100%;
+
+    ul.nav.navbar-nav {
+      float: none;
     }
-    .logo {
-      width: 240px;
-    }
-    .navbar-toggle {
-      margin-top: 26px;
-      .icon-bar {
-        background-color: #808080;
-        width: 30px;
-        height: 3px;
-      }
-    }
-    .navbar-nav {
-      padding: 0 !important;
-      .notk {
-        a:hover:after {
-          content: "";
-          display: block;
-          height: 3px;
-          width: 60px;
-          position: absolute;
-          margin: 0;
-          bottom: 0;
-          top: inherit;
-          background-color: @brand-primary;
-        }
-      }
-      .kontakt {
-        box-sizing: inherit;
-        border: none;
-        a:hover:after {
-          content: "";
-          display: block;
-          height: 3px;
-          width: 60px;
-          position: absolute;
-          margin: 0;
-          bottom: 0;
-          top: inherit;
-          background-color: @brand-primary;
-        }
-      }
-      .kontakt:hover {
+
+    .navbar {
+      a:hover {
         background-color: transparent;
-        a {
-          color: #00346e;
+      }
+      .container {
+        margin: 5px;
+        width: 100%;
+      }
+      .logo {
+        width: 240px;
+      }
+      .navbar-toggle {
+        margin-top: 26px;
+        .icon-bar {
+          background-color: #808080;
+          width: 30px;
+          height: 3px;
         }
       }
-    }
-    .marker a:after {
-      content: "";
-      display: block;
-      height: 3px;
-      width: 60px;
-      position: absolute;
-      margin: 0;
-      top: inherit;
-      bottom: 0;
-      background-color: #d55917;
-    }
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  ul.nav.navbar-nav {
-    float: none;
-  }
-  .navbar {
-    .logo {
-      width: 240px;
-    }
-    .navbar-toggle {
-      margin-top: 26px;
-      .icon-bar {
-        background-color: #808080;
-        width: 30px;
+      .navbar-nav {
+        padding: 0 !important;
+        .notk {
+          a:hover:after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            top: inherit;
+            background-color: @brand-primary;
+          }
+        }
+        .kontakt {
+          box-sizing: inherit;
+          border: none;
+          a:hover:after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            top: inherit;
+            background-color: @brand-primary;
+          }
+        }
+        .kontakt:hover {
+          background-color: transparent;
+          a {
+            color: #00346e !important;
+          }
+        }
+      }
+      .current-menu-item a:after {
+        content: "";
+        display: block;
         height: 3px;
+        width: 60px;
+        position: absolute;
+        margin: 0;
+        top: inherit;
+        bottom: 0;
+        background-color: #d55917;
       }
     }
-    .navbar-nav {
-      padding: 0 !important;
-      .notk {
-        a:hover:after {
-          content: "";
-          display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    ul.nav.navbar-nav {
+      float: none;
+    }
+
+    .navbar {
+      .logo {
+        width: 240px;
+      }
+      .navbar-toggle {
+        margin-top: 26px;
+        .icon-bar {
+          background-color: #808080;
+          width: 30px;
           height: 3px;
-          width: 60px;
-          position: absolute;
-          margin: 0;
-          bottom: 0;
-          top: inherit;
-          background-color: @brand-primary;
         }
       }
-      .kontakt {
-        box-sizing: inherit;
-        border: none;
-        a:hover:after {
-          content: "";
-          display: block;
-          height: 3px;
-          width: 60px;
-          position: absolute;
-          margin: 0;
-          bottom: 0;
-          top: inherit;
-          background-color: @brand-primary;
+      .navbar-nav {
+        padding: 0 !important;
+        .notk {
+          a:hover:after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            top: inherit;
+            background-color: @brand-primary;
+          }
+        }
+        .kontakt {
+          box-sizing: inherit;
+          border: none;
+          a:hover:after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 60px;
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            top: inherit;
+            background-color: @brand-primary;
+          }
+        }
+        .kontakt:hover {
+          background-color: transparent;
+          a {
+            color: #00346e;
+          }
         }
       }
-      .kontakt:hover {
-        background-color: transparent;
-        a {
-          color: #00346e;
-        }
+      .current-menu-item a:after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 60px;
+        position: absolute;
+        margin: 0;
+        top: inherit;
+        bottom: 0;
+        background-color: #d55917;
       }
     }
-    .marker a:after {
-      content: "";
-      display: block;
-      height: 3px;
-      width: 60px;
-      position: absolute;
-      margin: 0;
-      top: inherit;
-      bottom: 0;
-      background-color: #d55917;
-    }
   }
-}
 
-/* ==========================================================================
-Navbar CSS - END
-========================================================================== */
+  /* ==========================================================================
+  Navbar CSS - END
+  ========================================================================== */
 
+  /* ==========================================================================
+  Page Content - Homepage - START
+  ========================================================================== */
 
-/* ==========================================================================
-Page Content - Homepage - START
-========================================================================== */
-
-.title {
-  text-align: center;
-  color: @brand-success;
-  h1 {
-    font-weight: bold;
-  }
-}
-
-.slider_content {
-  .fa {
-    font-size: 4em;
-    color: @brand-primary;
-    position: relative;
-    top: 230px;
-  }
-}
-
-.carousel-indicators .active {
-  width: 17px;
-  height: 17px;
-  background-color: @brand-primary;
-  border: 1px solid @brand-primary;
-}
-
-.carousel-indicators li {
-  width: 15px;
-  height: 15px;
-  background-color: white;
-}
-
-.page_content {
-  margin-top: 130px;
-}
-
-.header_content {
-  position: relative;
-  background-image: url(../IT-Experts/img/homepage_header.jpg);
-  background-position: center;
-  height: 480px;
-  .caption {
+  .title {
     text-align: center;
-    color: #ffffff;
-    max-width: 100%;
-    .position-center;
-  }
-  .caption .big_text1 {
-    font-size: 52px;
-    font-weight: bold;
-    span {
-      background-color: @brand-primary;
-      padding: 0 10px;
-    }
-  }
-
-  .caption .small_text1 {
-    font-size: 18px;
-  }
-}
-
-.col-md-4 {
-  .big_text2 {
-    font-weight: bold;
-    color: @brand-info;
-  }
-}
-
-.col-md-8 {
-  .small_text2 {
-    font-size: 17px;
-    color: #808080;
-  }
-}
-
-.padding_top_bot {
-  padding-top: 115px;
-  padding-bottom: 115px;
-}
-
-.slider_content {
-  background-color: @brand-success;
-}
-
-#myCarousel {
-  height: 500px;
-  position: relative;
-  .slider_title {
-    color: white;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 50px;
+    color: @brand-success;
     h1 {
       font-weight: bold;
     }
   }
-  .carousel-control {
-    background-image: none;
-  }
-  .carousel-inner {
-    position: relative;
-    height: 100%;
-    .item {
-      height: 100%;
-      .main_text {
-        font-size: 18px;
-      }
-      .customer {
-        padding-top: 18px;
-      }
+
+  .slider_content {
+    .fa {
+      font-size: 4em;
+      color: @brand-primary;
+      position: relative;
+      top: 230px;
     }
   }
-  .caption {
-    text-align: center;
-    color: #ffffff;
-    .position-center-slider;
+
+  .carousel-indicators .active {
+    width: 17px;
+    height: 17px;
+    background-color: @brand-primary;
+    border: 1px solid @brand-primary;
   }
-}
 
-.marker_title
-h1:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 75px;
-  position: relative;
-  margin: 0 auto;
-  top: 8px;
-  background-color: @brand-primary;
-}
+  .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+  }
 
-.marker_title_left h1:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 75px;
-  position: relative;
-  left: 0;
-  top: 8px;
-  background-color: @brand-primary;
-}
+  .page_content {
+    margin-top: 130px;
+  }
 
-.middle2_content {
-  background-color: #F2F2F2;
-  .experts_list {
-    padding-top: 85px;
-    p {
-      font-size: 16px;
+  .header_content {
+    position: relative;
+    background-image: url(../IT-Experts/img/homepage_header.jpg);
+    background-position: center;
+    height: 480px;
+    .caption {
+      text-align: center;
+      color: #ffffff;
+      max-width: 100%;
+      .position-center;
+    }
+    .caption .big_text1 {
+      font-size: 52px;
+      font-weight: bold;
+      span {
+        background-color: @brand-primary;
+        padding: 0 10px;
+      }
+    }
+
+    .caption .small_text1 {
+      font-size: 18px;
+    }
+  }
+
+  .col-md-4 {
+    .big_text2 {
+      font-weight: bold;
+      color: @brand-info;
+    }
+  }
+
+  .col-md-8 {
+    .small_text2 {
+      font-size: 17px;
       color: #808080;
     }
+  }
+
+  .padding_top_bot {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+
+  .slider_content {
+    background-color: @brand-success;
+  }
+
+  #myCarousel {
+    height: 500px;
+    position: relative;
+    .slider_title {
+      color: white;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 50px;
+      h1 {
+        font-weight: bold;
+      }
+    }
+    .carousel-control {
+      background-image: none;
+    }
+    .carousel-inner {
+      position: relative;
+      height: 100%;
+      .item {
+        height: 100%;
+        .main_text {
+          font-size: 18px;
+        }
+        .customer {
+          padding-top: 18px;
+        }
+      }
+    }
+    .caption {
+      text-align: center;
+      color: #ffffff;
+      .position-center-slider;
+    }
+  }
+
+  .marker_title
+  h1:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 75px;
+    position: relative;
+    margin: 0 auto;
+    top: 8px;
+    background-color: @brand-primary;
+  }
+
+  .marker_title_left h1:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 75px;
+    position: relative;
+    left: 0;
+    top: 8px;
+    background-color: @brand-primary;
+  }
+
+  .middle2_content {
+    background-color: #F2F2F2;
+    .experts_list {
+      padding-top: 85px;
+      p {
+        font-size: 16px;
+        color: #808080;
+      }
       ul {
         padding: 0;
         font-size: 17px;
@@ -735,229 +719,249 @@ h1:after {
           .fa-icon;
         }
       }
-    .website {
-      padding-top: 20px;
-      .website_link {
-        padding: 15px 15px;
-        font-size: 20px;
-        box-sizing: border-box;
-        border: 2px solid @brand-primary;
-        border-radius: 2em;
+      .website {
+        padding-top: 20px;
+        .website_link {
+          padding: 15px 15px;
+          font-size: 20px;
+          box-sizing: border-box;
+          border: 2px solid @brand-primary;
+          border-radius: 2em;
 
-        a {
-          text-decoration: none;
-          color: #00346e;
+          a {
+            text-decoration: none;
+            color: #00346e;
+          }
         }
       }
     }
-  }
-  .col-md-5 {
-    padding-top: 85px;
-    .it_experts_img {
-      text-align: center;
-      img {
-        width: 380px;
-        max-width: 100%;
+    .col-md-5 {
+      padding-top: 85px;
+      .it_experts_img {
+        text-align: center;
+        img {
+          width: 380px;
+          max-width: 100%;
+        }
+        p {
+          padding-top: 20px;
+          color: #808080;
+        }
       }
-      p {
-        padding-top: 20px;
-        color: #808080;
-      }
-    }
-  }
-  h1 {
-    color: @brand-info;
-  }
-}
-
-.website_link:hover {
-  background-color: @brand-primary;
-  border-radius: 2em;
-  a {
-    color: #ffffff !important;
-  }
-}
-
-.middle3_content {
-  text-align: center;
-  .col-md-3 {
-    img {
-      max-width: 90%;
-    }
-  }
-  h1 {
-    color: @brand-info;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .page_content {
-    margin-top: 95px;
-  }
-  .header_content {
-    .small_text1 {
-      font-size: 14px !important;
-    }
-    .big_text1 {
-      font-size: 33px !important;
-    }
-  }
-  .middle1_content {
-    .padding_top_bot {
-      padding-top: 35px;
-      padding-bottom: 35px;
     }
     h1 {
-      font-size: 30px;
-    }
-    .col-md-8 {
-      padding-top: 20px;
+      color: @brand-info;
     }
   }
-  .slider_content {
-    #myCarousel .carousel-control {
-      display: none;
+
+  .website_link:hover {
+    background-color: @brand-primary !important;
+    border-radius: 2em !important;
+    a {
+      color: #ffffff !important;
     }
-    .slider_title {
-      h1 {
-        font-size: 28px;
+  }
+
+  .middle3_content {
+    text-align: center;
+    .col-md-3 {
+      img {
+        max-width: 90%;
       }
     }
-    .caption {
-      width: 95%;
-      text-align: left !important;
-      .main_text {
+    h1 {
+      color: @brand-info;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .page_content {
+      margin-top: 95px;
+    }
+
+    .header_content {
+      .small_text1 {
         font-size: 14px !important;
       }
-      .customer {
-        font-size: 12px !important;
+      .big_text1 {
+        font-size: 33px !important;
       }
     }
-  }
-  .middle2_content {
-    .title {
-      font-size: 32px;
-    }
-    .padding_top_bot {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-    .col-md-7 {
-      padding-top: 30px;
-    }
-  }
-  .middle3_content {
-    .padding_top_bot {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-    .title {
-      padding-bottom: 35px;
+
+    .middle1_content {
+      .padding_top_bot {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
       h1 {
+        font-size: 30px;
+      }
+      .col-md-8 {
+        padding-top: 20px;
+      }
+    }
+
+    .slider_content {
+      #myCarousel .carousel-control {
+        display: none;
+      }
+      .slider_title {
+        h1 {
+          font-size: 28px;
+        }
+      }
+      .caption {
+        width: 95%;
+        text-align: left !important;
+        .main_text {
+          font-size: 14px !important;
+        }
+        .customer {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .middle2_content {
+      .title {
         font-size: 32px;
       }
+      .padding_top_bot {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+      .col-md-7 {
+        padding-top: 30px;
+      }
+    }
+
+    .middle3_content {
+      .padding_top_bot {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+      .title {
+        padding-bottom: 35px;
+        h1 {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .footer {
+      .padding_top_bot {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
     }
   }
-  .footer {
-    .padding_top_bot {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-  }
-}
 
-/* ==========================================================================
-Page Content - Homepage - END
-========================================================================== */
+  /* ==========================================================================
+  Page Content - Homepage - END
+  ========================================================================== */
 
-/* ==========================================================================
-Page Content - IT-Compliance Baukastensystem - START
-========================================================================== */
+  /* ==========================================================================
+  Page Content - IT-Compliance Baukastensystem - START
+  ========================================================================== */
 
-.header_bild {
-  position: relative;
-  background-image: url(../IT-Experts/img/homepage_header.jpg);
-  background-position: center;
-  height: 240px;
-  .caption {
-    text-align: center;
-    color: #ffffff;
-    max-width: 100%;
-    .position-center;
-    .big_text1 {
-      font-size: 52px;
+  .first_content {
+    h2 {
       font-weight: bold;
-      text-transform: uppercase;
+      color: @brand-info;
     }
   }
-}
-.compliance_content {
-  .col-md-4 {
-    ul {
-      list-style: none;
-      font-size: 18px;
-      line-height: 72px;
-      li {
-        border-bottom: 1px dotted #808080;
-        a {
-          color: @brand-primary;
-          font-weight: bold;
-          text-decoration: none;
-          &:after {
-            content: @fa-var-chevron-right;
-            .fa-icon;
+
+  .header_bild {
+    position: relative;
+    background-image: url(../IT-Experts/img/homepage_header.jpg);
+    background-position: center;
+    height: 240px;
+    .caption {
+      text-align: center;
+      color: #ffffff;
+      max-width: 100%;
+      .position-center;
+      .big_text1 {
+        font-size: 52px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .compliance_content {
+    .col-md-4 {
+      ul {
+        list-style: none;
+        font-size: 18px;
+        line-height: 72px;
+        li {
+          border-bottom: 1px dotted #808080;
+          a {
             color: @brand-primary;
-            float: right;
-            line-height: 72px;
+            font-weight: bold;
+            text-decoration: none;
+            &:after {
+              content: @fa-var-chevron-right;
+              .fa-icon;
+              color: @brand-primary;
+              float: right;
+              line-height: 72px;
+            }
+          }
+          .collapsed {
+            color: #808080;
+            font-weight: 100;
+            &:after {
+              content: @fa-var-chevron-right;
+              .fa-icon;
+              color: @brand-info;
+              float: right;
+              line-height: 72px;
+            }
           }
         }
-        .collapsed {
+        .noborder {
+          border: none;
+        }
+      }
+    }
+    .col-md-8 {
+      padding-left: 48px;
+      .baukastensysteme_title {
+        h1 {
+          color: @brand-info;
+          font-weight: bold;
+        }
+        h2 {
+          color: @brand-info;
+          font-weight: bold;
+        }
+      }
+      .first_content {
+        padding-top: 36px;
+        font-size: 18px;
+        color: #808080;
+      }
+      h2 {
+        padding-bottom: 22px;
+      }
+      .feedback {
+        color: #000000;
+        font-weight: bold;
+        border-left: 2px solid @brand-primary;
+        padding-left: 32px;
+        margin-top: 36px;
+        .nutzer {
+          font-size: 14px;
+          padding-top: 8px;
           color: #808080;
           font-weight: 100;
-          &:after {
-            content: @fa-var-chevron-right;
-            .fa-icon;
-            color: @brand-info;
-            float: right;
-            line-height: 72px;
-          }
         }
       }
-      .noborder {
-        border: none;
-      }
-    }
-  }
-  .col-md-8 {
-    padding-left: 48px;
-    .baukastensysteme_title {
-      h1 {
-        color: @brand-info;
-        font-weight: bold;
-      }
-      h2 {
-        color: @brand-info;
-        font-weight: bold;
-      }
-    }
-    .first_content {
-      padding-top: 36px;
-      font-size: 18px;
-      color: #808080;
-    }
-    .baukastensysteme_title2 {
-      padding-top: 36px;
-      h2 {
-        color: @brand-info;
-        font-weight: bold;
-      }
-    }
-    .second_content {
-      padding-top: 36px;
-      font-size: 18px;
-      color: #808080;
-      .compliance_list {
+      ul {
         padding: 0;
+        padding-top: 18px;
         font-size: 17px;
         font-weight: bold;
         line-height: 38px;
@@ -969,154 +973,219 @@ Page Content - IT-Compliance Baukastensystem - START
           .fa-icon;
         }
       }
-    }
-    .third_content {
-      padding-top: 36px;
-      font-size: 18px;
-      color: #808080;
-      .feedback {
-        color: #000000;
-        font-weight: bold;
-        border-left: 2px solid @brand-primary;
-        padding-left: 32px;
-        margin-top: 36px;
-        .nutzer {
-          font-size: 14px;
-          color: #808080;
-          font-weight: 100;
+      .baukastensysteme_title2 {
+        padding-top: 36px;
+        h2 {
+          color: @brand-info;
+          font-weight: bold;
         }
       }
-    }
-    .fourth_content {
-      img {
-        max-width: 100%;
-      }
-    }
-  }
-}
-
-/* ==========================================================================
-Page Content - IT-Compliance Baukastensystem - END
-========================================================================== */
-
-/* ==========================================================================
-Footer - START
-========================================================================== */
-
-.footer {
-  background-color: @brand-success;
-  .col-md-3 {
-    h1 {
-      color: #ffffff;
-      font-weight: bold;
-    }
-    .footer_list {
-      list-style: none;
-      font-size: 18px;
-      padding: 28px 0 0 0;
-      li {
-        color: #ffffff;
-        position: relative;
-        font-weight: bold;
-        margin-top: 12px;
-        padding-left: 32px;
-        &:before {
-          color: @brand-primary;
-          position: absolute;
-          left: 0;
-          height: 25px;
-          top: 0;
-          .fa-icon;
-          line-height: 25px;
-        }
-        &.tel:before {
-          content: @fa-var-mobile;
-          font-size: 1.5em;
-        }
-        &.mail:before {
-          content: @fa-var-envelope;
-          font-size: 0.9em;
-        }
-        &.adress:before {
-          content: @fa-var-map-marker;
-          font-size: 1.3em;
-        }
-      }
-      .maps {
-        a {
-          font-weight: 100;
-          border-bottom: 1px dotted @brand-primary;
-          color: @brand-primary;
-        }
-      }
-      a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: bold;
-      }
-    }
-  }
-  .col-md-8 {
-    margin-top: 20px;
-    .footer_text {
-      font-size: 17px;
-      color: #ffffff;
-    }
-    .footer_formular {
-      padding-top: 38px;
-      .form-control {
+      .second_content {
+        padding-top: 36px;
         font-size: 18px;
-        background-color: transparent;
-        border: 2px solid #ffffff;
-        color: #ffffff;
+        color: #808080;
       }
-      #name {
-        height: 50px;
+      .third_content {
+        padding-top: 36px;
+        font-size: 18px;
+        color: #808080;
       }
-      #email {
-        height: 50px;
+      .fourth_content {
+        img {
+          max-width: 100%;
+        }
       }
     }
   }
-  .col-md-12, .col-xs-12 {
-    padding-top: 32px;
-    .senden {
-      padding-top: 30px;
-      .btn-default {
-        color: #ffffff;
-        background-color: transparent;
-        border-radius: 2em;
-        padding: 15px;
-        font-size: 16px;
-        border: 2px solid @brand-primary;
-      }
-      .btn-default:hover {
+
+  /* ==========================================================================
+  Page Content - IT-Compliance Baukastensystem - END
+  ========================================================================== */
+
+  /* ==========================================================================
+  Page Content - Über uns - START
+  ========================================================================== */
+
+  .feature-image {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  #ueber-uns {
+    h1 {
+      color: @brand-info;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-bottom: 16px;
+      padding-top: 16px;
+      &:after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 75px;
+        position: relative;
+        left: 0;
+        top: 8px;
         background-color: @brand-primary;
-        border-radius: 2em;
+      }
+    }
+    p {
+      color: #808080;
+      font-size: 17px;
+    }
+  }
+
+  /* ==========================================================================
+  Page Content - Über uns - END
+  ========================================================================== */
+
+  /* ==========================================================================
+  Footer - START
+  ========================================================================== */
+
+  .footer {
+    background-color: @brand-success;
+    .col-md-3 {
+      h1 {
+        color: #ffffff;
+        font-weight: bold;
+      }
+      .footer_list {
+        list-style: none;
+        font-size: 18px;
+        padding: 28px 0 0 0;
+        li {
+          color: #ffffff;
+          position: relative;
+          font-weight: bold;
+          margin-top: 12px;
+          padding-left: 32px;
+          &:before {
+            color: @brand-primary;
+            position: absolute;
+            left: 0;
+            height: 25px;
+            top: 0;
+            .fa-icon;
+            line-height: 25px;
+          }
+          &.tel:before {
+            content: @fa-var-mobile;
+            font-size: 1.5em;
+          }
+          &.mail:before {
+            content: @fa-var-envelope;
+            font-size: 0.9em;
+          }
+          &.adress:before {
+            content: @fa-var-map-marker;
+            font-size: 1.3em;
+          }
+        }
+        .maps {
+          a {
+            font-weight: 100;
+            border-bottom: 1px dotted @brand-primary;
+            color: @brand-primary;
+          }
+        }
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+    }
+    .col-md-8 {
+      margin-top: 20px;
+      .footer_text {
+        font-size: 17px;
+        color: #ffffff;
+      }
+      .footer_formular {
+        padding-top: 38px;
+        .nf-before-form-content {
+          display: none;
+        }
+        .nf-form-title {
+          display: none;
+        }
+        .ninja-forms-req-symbol {
+          display: none;
+        }
+        .no-clear {
+          clear: none !important;
+          margin: 0;
+        }
+        .form-control {
+          font-size: 18px;
+          background-color: transparent;
+          border: 2px solid #ffffff;
+          color: #ffffff;
+        }
+        .website_link {
+          background-color: transparent;
+          color: #ffffff;
+          padding: 15px 15px;
+          font-size: 20px;
+          box-sizing: border-box;
+          border: 2px solid @brand-primary;
+          border-radius: 2em;
+          margin-left: 15px;
+          a {
+            text-decoration: none;
+            color: #00346e;
+          }
+        }
+        #name {
+          height: 50px;
+        }
+        #email {
+          height: 50px;
+        }
+      }
+    }
+    .col-md-12, .col-xs-12 {
+      padding-top: 32px;
+      .senden {
+        padding-top: 30px;
+        .btn-default {
+          color: #ffffff;
+          background-color: transparent;
+          border-radius: 2em;
+          padding: 15px;
+          font-size: 16px;
+          border: 2px solid @brand-primary;
+        }
+        .btn-default:hover {
+          background-color: @brand-primary;
+          border-radius: 2em;
+        }
       }
     }
   }
-}
 
-.imprint {
-  height: 80px;
-  .row {
-    margin-top: 25px;
-    font-size: 16px;
-  }
-  .siegel {
-    color: #808080;
-  }
-  .imprint_link {
-    float: right;
-    a {
+  .imprint {
+    height: 80px;
+    .row {
+      margin-top: 25px;
+      font-size: 16px;
+    }
+    .siegel {
       color: #808080;
-      border-bottom: 1px dotted #808080;
-      text-decoration: none;
+    }
+    .imprint_link {
+      float: right;
+      a {
+        color: #808080;
+        border-bottom: 1px dotted #808080;
+        text-decoration: none;
+      }
     }
   }
-}
 
-/* ==========================================================================
-Footer - END
-========================================================================== */
+  /* ==========================================================================
+  Footer - END
+  ========================================================================== */

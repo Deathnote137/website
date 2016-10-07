@@ -28,21 +28,7 @@
                         Tool sich am besten in Ihre Umgebung einbauen lässt.</p>
                 </div>
                 <div class="footer_formular">
-                    <div class="row">
-                        <div class="col-md-6 col-xs-6"><input type="text" class="form-control" id="name"
-                                                              placeholder="Name"></div>
-                        <div class="col-md-6 col-xs-6"><input type="text" class="form-control" id="email"
-                                                              placeholder="E-Mail"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                                        <textarea class="form-control" rows="7" id="comment"
-                                                  placeholder="Ihre Nachricht"></textarea>
-                            <div class="senden">
-                                <button type="submit" class="btn btn-default">Nachricht Senden</button>
-                            </div>
-                        </div>
-                    </div>
+                    <?= do_shortcode("[ninja_form id=1]"); ?>
                 </div>
             </div>
         </div>
@@ -84,10 +70,5 @@
         ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
         ga('send', 'pageview');
     </script>
-    <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
     </body>
     </html>
