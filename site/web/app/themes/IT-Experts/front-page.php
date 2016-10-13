@@ -72,7 +72,6 @@ $args = array(
 										<li><a class="left_arrow arrow" href="#myPuzzle" role="button" data-slide="prev"><span class="fa fa-chevron-left" aria-hidden="true"></span></a></li>
 										<li><a class="right_arrow arrow" href="#myPuzzle" role="button" data-slide="next"><span class="fa fa-chevron-right" aria-hidden="true"></span></a></li>
 									</ul>
-									<div class="num"></div>
 								</div>
 							</div>
 						</div>
