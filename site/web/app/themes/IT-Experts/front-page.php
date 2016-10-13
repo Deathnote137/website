@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+<?php get_header();
+$args = array(
+	"posts_per_page" => 10,
+	"tax_query" => array(
+		array(
+			"taxonomy" => "category",
+			"field" => "slug",
+			"terms" => "puzzle-post",
+		)
+	),
+	"order" => "ASC",
+); ?>
 
 	<main role="main">
 		<!-- section -->
@@ -29,6 +40,45 @@
 					</div>
 				</div>
 
+				<div class="puzzle_content">
+					<div class="container padding_top_bot">
+						<div id="myPuzzle" class="carousel slide" data-ride="carousel" data-interval="false">
+							<div class="col-md-6">
+								<div class="puzzle_left carousel-indicators">
+									<?php $posts_array = get_posts($args);
+									foreach ($posts_array as $key => $post) { ?>
+									<div class="puzzle_piece <?= $key == 0 ? "active" : "" ?>" id="piece_<?= $key ?>" data-target="#myPuzzle" data-slide-to="<?= $key ?>">
+										<div class="punkt_<?= $key % 2 == 0 ? "left" : "right" ?>"></div>
+										<div class="strich_<?= $key % 2 == 0 ? "left" : "right" ?>"></div>
+										<div class="link_<?= $key % 2 == 0 ? "left" : "right" ?>"><p><?= $post->post_title; ?></p></div>
+										<img src="<?php echo get_template_directory_uri(); ?>/img/element<?= $key ?>.svg">
+									</div>
+									<? } ?>
+									</div>
+							</div>
+							<div class="col-md-6">
+								<div class="carousel-inner" role="listbox">
+									<?php foreach ($posts_array as $key => $post) { ?>
+									<div class="puzzle item <?= $key == 0 ? "active" : "" ?>">
+										<h1><?= $post->post_title; ?></h1>
+										<div class="puzzle_right_content">
+											<?= $post->post_content ?>
+										</div>
+									</div>
+									<? } ?>
+								</div>
+								<div class="puzzle_pagination">
+									<ul class="pagination pagination-lg">
+										<li><a class="left_arrow arrow" href="#myPuzzle" role="button" data-slide="prev"><span class="fa fa-chevron-left" aria-hidden="true"></span></a></li>
+										<li><a class="right_arrow arrow" href="#myPuzzle" role="button" data-slide="next"><span class="fa fa-chevron-right" aria-hidden="true"></span></a></li>
+									</ul>
+									<div class="num"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 				<div class="slider_content">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<div class="slider_title marker_title">
@@ -41,6 +91,7 @@
 							<li data-target="#myCarousel" data-slide-to="2"></li>
 						</ol>
 						<!-- Wrapper for slides -->
+						<?php wp_reset_query(); ?>
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								<div class="caption">

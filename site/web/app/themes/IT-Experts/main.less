@@ -273,10 +273,6 @@
       page-break-inside: avoid;
     }
 
-    img {
-      max-width: 100% !important;
-    }
-
     p,
     h2,
     h3 {
@@ -558,6 +554,186 @@
   Page Content - Homepage - START
   ========================================================================== */
 
+  .puzzle_content {
+    background-color: #F3F3F3;
+    background-image: linear-gradient(left, #ffffff, #ffffff 50%, transparent 0%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, #ffffff, #ffffff 50%, transparent 0%, transparent 100%);
+    background-image: -moz-linear-gradient(left, #ffffff, #ffffff 50%, transparent 0%, transparent 100%);
+    background-image: -ms-linear-gradient(left, #ffffff, #ffffff 50%, transparent 0%, transparent 100%);
+    background-image: linear-gradient(left, #ffffff, #ffffff 50%, transparent 0%, transparent 100%);
+    .item {
+      h1 {
+        color: @brand-info;
+        font-weight: bold;
+        &:after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 75px;
+          position: relative;
+          left: 0;
+          top: 8px;
+          background-color: @brand-primary;
+        }
+      }
+
+    }
+    .puzzle_right_content {
+      padding: 15px 0;
+      color: #808080;
+      font-size: 17px;
+    }
+    .puzzle_left {
+      max-width: 400px;
+      height: 750px;
+      //background-image: url(../img/puzzle.png);
+      //background-repeat: no-repeat;
+      .puzzle_piece {
+        width: 200px;
+        height: 150px;
+        float: left;
+        opacity: 0.2;
+        position: relative;
+        cursor: pointer;
+        background-color: transparent;
+        &.active {
+
+        }
+        .punkt_left {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: #808080;
+          border-radius: 50%;
+          left: 150px;
+          top: 37px;
+        }
+        .strich_left {
+          position: absolute;
+          height: 2px;
+          width: 300px;
+          background-color: #808080;
+          left: 150px;
+          top: 43px;
+        }
+        .link_left {
+          position: absolute;
+          left: 458px;
+          top: 32px;
+          text-align: left;
+          width: 100%;
+          p {
+            color: #808080;
+            font-weight: bold;
+          }
+        }
+        .punkt_right {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: #808080;
+          border-radius: 50%;
+          left: 50px;
+          top: 100px;
+        }
+        .strich_right {
+          position: absolute;
+          height: 2px;
+          width: 200px;
+          background-color: #808080;
+          left: 50px;
+          top: 107px;
+        }
+        .link_right {
+          position: absolute;
+          left: 258px;
+          top: 95px;
+          text-align: left;
+          width: 100%;
+          p {
+            color: #808080;
+            font-weight: bold;
+          }
+        }
+      }
+      #piece_0 {
+        z-index: 15;
+        img {
+          width: 116%;
+        }
+      }
+      #piece_2 {
+        z-index: 15;
+        img {
+          width: 99%;
+          margin-right: 1px;
+        }
+      }
+      #piece_3 {
+        img {
+          width: 114%;
+          margin-left: -28px;
+        }
+      }
+      #piece_4 {
+        z-index: 15;
+        img {
+          margin-top: -32px;
+        }
+      }
+      #piece_5 {
+        img {
+          width: 119%;
+          margin-left: -38px;
+          margin-top: -34px;
+        }
+      }
+      #piece_6 {
+        z-index: 15;
+        img {
+          width: 115%;
+          margin-top: 1px;
+        }
+      }
+      #piece_7 {
+        img {
+          margin-top: 1px;
+        }
+      }
+      #piece_8 {
+        z-index: 15;
+        img {
+          width: 117%;
+          margin-top: 2.2px;
+        }
+      }
+      #piece_9 {
+        img {
+          margin-top: -35px;
+          margin-right: 1px;
+          width: 100%;
+        }
+      }
+      .active.puzzle_piece {
+        border: none;
+        opacity: 1 !important;
+      }
+    }
+    .carousel-indicators {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      left: 0;
+      bottom: 0;
+    }
+    .puzzle_pagination {
+      .arrow {
+        font-size: 18px;
+      }
+    }
+  }
+
+
   .title {
     text-align: center;
     color: @brand-success;
@@ -578,8 +754,6 @@
   .carousel-indicators .active {
     width: 17px;
     height: 17px;
-    background-color: @brand-primary;
-    border: 1px solid @brand-primary;
   }
 
   .carousel-indicators li {

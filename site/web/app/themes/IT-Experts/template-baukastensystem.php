@@ -1,5 +1,4 @@
-<?php /* Template Name: IT-Compliance Baukastensystem */
-get_header();
+<?php /* Template Name: IT-Compliance Baukastensystem */ get_header();
 $args = array(
     "posts_per_page" => -1,
     "tax_query" => array(
@@ -47,11 +46,11 @@ $args = array(
 </div>
 
 <script>
-    jQuery(".baukastensysteme a").click(function () {
-        jQuery(".collapse_content").collapse('hide');
+    $(".baukastensysteme a").click(function () {
+        $(".collapse_content").collapse('hide');
     });
-    jQuery('.collapse_content').on('hide.bs.collapse', function () {
-        jQuery('.collapse_content').on('show.bs.collapse');
+    $('.collapse_content').on('hide.bs.collapse', function () {
+        $('.collapse_content').on('show.bs.collapse');
     });
 </script>
 

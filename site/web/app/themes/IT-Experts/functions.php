@@ -103,6 +103,11 @@ function html5blank_header_scripts()
 
         wp_register_script('html5bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', array(), ''); // Custom scripts
         wp_enqueue_script('html5bootstrap'); // Enqueue it!
+
+        wp_dequeue_script( "jquery" );
+        wp_deregister_script( "jquery" );
+        wp_enqueue_script( "jquery", get_stylesheet_directory_uri() . "/js/jquery-3.1.1.min.js" );
+
     }
 }
 
@@ -453,6 +458,16 @@ function html5_shortcode_demo($atts, $content = null)
 function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
     return '<h2>' . $content . '</h2>';
+}
+
+function puzzle_lines($class, $title) {
+    ob_start();
+    ?>
+    <div class="punkt_<?= $class ?>"></div>
+    <div class="strich_<?= $class ?>"></div>
+    <div class="link_<?= $class ?>"><p><?= $title ?></p></div>
+    <?php
+    return ob_get_clean();
 }
 
 ?>
