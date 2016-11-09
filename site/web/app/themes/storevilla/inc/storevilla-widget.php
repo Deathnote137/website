@@ -1785,7 +1785,7 @@ class storevilla_blog_widget_area extends WP_Widget {
                                             <?php echo storevilla_word_count( get_the_content(), 80); ?>
                                         </div>
                                     <?php } ?>
-                                    <a class="blog-preview-btn" href="<?php the_permalink(); ?>"><?php _e('READ MORE','storevilla'); ?></a>
+                                    <a class="blog-preview-btn" href="<?php the_permalink(); ?>"><?php _e('WEITERLESEN','storevilla'); ?></a>
                                 </div>
                                 
                             </div>

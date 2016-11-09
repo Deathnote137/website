@@ -182,7 +182,7 @@ add_action( 'widgets_init', 'storevilla_widgets_init' );
  * Enqueue scripts and styles.
  */
 function storevilla_scripts() {
-
+	$version = '15';
 	/*----------------- Google Fonts --------------------------------------*/
 	$storevilla_font_args = array(
         'family' => 'Open+Sans:400,300,400,600,600,700|Lato:400,300,300,400,700',
@@ -195,7 +195,7 @@ function storevilla_scripts() {
 	
 	wp_enqueue_style( 'lightslider', get_template_directory_uri() . '/assets/css/lightslider.css');
 
-	wp_enqueue_style( 'storevilla-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'storevilla-style', get_stylesheet_uri() , array(), $version);
 
 	wp_enqueue_style( 'storevilla-responsive', get_template_directory_uri() . '/assets/css/responsive.css');
 		

@@ -2774,7 +2774,7 @@ h3.comment-reply-title,
     color: #0091d5;
     font-family: Open Sans;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -3254,7 +3254,7 @@ woocommerce css
     margin-right: 3px;
     outline: medium none;
     padding: 7px 20px 7px 10px;
-    width: 150px;
+    width: 175px;
 }
 .woocommerce .woocommerce-ordering:before {
     color: #8e8e8e;
@@ -3320,7 +3320,7 @@ woocommerce css
     margin-bottom: 0;
 }
 .woocommerce .star-rating {
-    font-size: 10px;
+    font-size: 13px;
     margin-bottom: 3px;
 }
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
@@ -3944,7 +3944,7 @@ button.single_add_to_cart_button:before {
     left: 11px;
     font-family: FontAwesome;
     font-size: 13px;
-    top: 7px;
+    top: 10px;
 }
 .woocommerce #respond input#submit.alt:hover, 
 .woocommerce a.button.alt:hover, 
@@ -4049,6 +4049,12 @@ button.single_add_to_cart_button:before {
 .single-product .storevilla-social {
     padding-top: 10px;
 }
+.storevilla-social {
+    display: none;
+}
+.ppt {
+    display: none !important;
+}
 /*
 ========================
 sidebar pagelayout css
@@ -4093,7 +4099,7 @@ sidebar pagelayout css
 .woocommerce-tabs.wc-tabs-wrapper h2{
     font-size: 18px;
     color: #0091d5;
-    font-weight: 300;
+    font-weight: bold;
     margin-bottom: 15px;
     font-family: Open Sans;
 }
@@ -4930,4 +4936,16 @@ Group Products
 
 .site-header-cart .woocommerce ul.cart_list li a{
     font-size: 13px;
+}
+
+.stars {
+    font-size: 20px;
+}
+
+.meta {
+    font-size: 1.03em !important;
+}
+
+.product_title {
+    font-weight: bold !important;
 }
